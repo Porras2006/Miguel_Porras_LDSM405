@@ -1,0 +1,146 @@
+body {
+    background-color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Para que el padding no afecte el cálculo del alto */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1; /* Empuja el footer hacia abajo si sobra espacio */
+    align-items: stretch; /* Hace que las columnas (contenido y aside) tengan la misma altura */
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+.material-symbols-outlined {
+    color: rgb(104, 136, 253);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#superior {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.barra_superior, 
+.barra_inferior {
+    display: flex;
+    gap: 15px;
+}
+
+.barra_superior article, 
+.barra_inferior article {
+    flex: 1;
+    height: 120px;
+    background-color: #222;
+    border: 1px solid #444;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen_f {
+    background-image: url('img/logo.jpeg');
+}
+
+.degradado {
+    background: linear-gradient(135deg, #00c6ff 0%, #ff0055 100%) !important;
+}
+
+#inferior {
+    display: flex;
+    gap: 15px;
+}
+
+#inferior article {
+    flex: 1;
+    background-color: #111;
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+aside {
+    width: 200px;
+    background-color: #111;
+    padding: 15px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+aside h3 {
+    color: white;
+    margin-top: 0;
+}
+
+aside ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* ==========================================
+   FOOTER (SECCIONES Y LISTA HORIZONTAL)
+   ================================---------- */
+footer {
+    display: flex;
+    justify-content: space-between; /* Esparcidas a lo largo de la pantalla con buena proporción */
+    align-items: center;
+    background-color: #111;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+footer article {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* REQUISITO: Lista que está en el footer acomodada en horizontal */
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    color: rgb(104, 136, 253);
+    text-decoration: none;
+}
+
