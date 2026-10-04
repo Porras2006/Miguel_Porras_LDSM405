@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Autos</h1>
+    <main>
+        <section>
+            <article>
+                <form name="autos_f1" method="post" action="#" enctype="multipart/form-data">
+                    <div id="autos">
+                        <div> 
+                            <label>Modelo: </label>
+                            <input type="text" id="modelo"/><br>
+                        </div>
+                        <div>
+                            <label>Color:</label>
+                            <input type="color" id="color"/>
+                        </div>
+                        <div>
+                            <label>Foto:</label>
+                            <input type="file" id="imagen"/><br> 
+                        </div>
+                        <div>
+                            <label>Activo:</label>
+                            <input type="radio" name="activo" id="activo" value="Si"/>Si
+                            <input type="radio" name="activo" id="activo" value="No"/>No
+                        </div>
+                    </div>
+                    <button id="boton" onclick="autos()">Guardar</button>
+                </form>
+            </article>
+        </section>
+        <aside>
+            <nav>
+                <h3>Menu</h3>
+                <ol>
+                    <li><a href="home.html" target="_self">Home</a></li>
+                    <li><a href="escuderia.html" target="_self">Escuderia</a></li>
+                    <li><a href="corredor.html" target="_self">Corredor</a></li>
+                    <li><a href="relaciones.html" target="_self">Relaciones</a></li>
+                </ol>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <article>
+            <nav>
+                <h3>Miguel Angel Porras Flores</h3>
+            </nav>
+        </article>
+        <article>
+            <h3>LDSM405</h3>
+        </article>
+    </footer>
+    <script src="funcionalidades.js"></script>
+</body>
+</html>

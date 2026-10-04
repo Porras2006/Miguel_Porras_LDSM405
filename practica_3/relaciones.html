@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaciones</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Relaciones</h1>
+    <main>
+        <section>
+            <article>
+                <form name="relaciones_f1" method="post" action="#" enctype="multipart/form-data">
+                    <div id="relaciones">
+                        <fieldset>
+                            <legend>Auto-Corredor:</legend>
+                            <div>
+                                <label>Auto</label>
+                                <select id="auto">
+                                  <option value="Cadillac">Cadillac</option>
+                                  <option value="Mercedes">Mercedes</option>
+                                  <option value="Williams">Williams</option>
+                                </select><br>
+                                <label>Corredor</label>
+                                <select id="corredor">
+                                  <option value="Checo Perez">Checo Perez</option>
+                                  <option value="Lewis Hamilton">Lewis Hamilton</option>
+                                  <option value="Carlos Sainz">Carlos Sainz</option>
+                                </select><br>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Compañeros:</legend>
+                            <div>
+                                <label>Piloto 1:</label>
+                                <select id="piloto_1">
+                                  <option value="Checo Perez">Checo Perez</option>
+                                  <Hamilton value="Lewis Hamilton">Hamilton</option>
+                                  <option value="Carlos Sainz">Carlos Sainz</option>
+                                </select><br>
+                                <label>Piloto 2:</label>
+                                <select id="piloto_2">
+                                  <option value="Valteri Vottas">Valteri Vottas</option>
+                                  <option value="Charles Leclerc">Charles Leclerc</option>
+                                  <option value="Alex Albon">Alex Albon</option>
+                                </select><br>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button id="boton" onclick="relaciones()">Guardar</button>
+                </form>
+            </article>
+        </section>
+        <aside>
+            <nav>
+                <h3>Menu</h3>
+                <ol>
+                    <li><a href="home.html" target="_self">Home</a></li>
+                    <li><a href="autos.html" target="_self">Autos</a></li>
+                    <li><a href="corredor.html" target="_self">Corredor</a></li>
+                    <li><a href="escuderia.html" target="_self">Escuderia</a></li>
+                </ol>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <article>
+            <nav>
+                <h3>Miguel Angel Porras Flores</h3>
+            </nav>
+        </article>
+        <article>
+            <h3>LDSM405</h3>
+        </article>
+    </footer>
+    <script src="funcionalidades.js"></script>
+</body>
+</html>

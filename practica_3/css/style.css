@@ -1,0 +1,110 @@
+body {
+    background-color: #FF2800;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 30px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    flex: 1;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#boton {
+    padding: 12px;
+    background-color: white;
+    color: #FF2800;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+#boton:hover {
+    background-color: #333;
+    color: white;
+}
+
+aside {
+    width: 250px;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside ol {
+    padding-left: 20px;
+}
+
+aside ol li {
+    margin: 10px;
+}
+
+aside ol li a {
+    text-decoration: none;
+    color: white;
+}
+
+aside ol li a:hover {
+    color: #111;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: auto;
+}
