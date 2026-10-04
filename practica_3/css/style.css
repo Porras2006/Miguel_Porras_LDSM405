@@ -1,52 +1,59 @@
 body {
-    background-color: #FF2800;
+    background-image: url(../img/randomwinner-max-verstappen-6633948_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     align-items: center;
-    text-align: center;
-}
-
-h1 {
-    margin: 30px 0;
+    font-family: sans-serif;
 }
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 85%;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
     flex: 1;
-    gap: 60px;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
 section {
     flex: 1;
     display: flex;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin-left: auto; 
+    margin-right: 250px;
+    max-width: 450px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 450px;
     text-align: left;
 }
 
 label {
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     font-weight: bold;
+    font-size: 14px;
 }
 
 fieldset {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 12px;
     border-radius: 6px;
+    margin-top: 10px;
 }
 
 legend {
@@ -56,47 +63,60 @@ legend {
 
 #boton {
     padding: 12px;
-    background-color: white;
-    color: #FF2800;
+    background-color: #FF2800;
+    color: white;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
 }
 
 #boton:hover {
-    background-color: #333;
-    color: white;
+    background-color: #cc2000;
+    transform: scale(1.02);
 }
 
 aside {
-    width: 250px;
-    background: rgba(0, 0, 0, 0.15);
-    padding: 30px 20px;
+    width: 240px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-self: stretch;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+aside h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 8px;
 }
 
 aside ol {
     padding-left: 20px;
+    margin: 15px 0 0 0;
 }
 
 aside ol li {
-    margin: 10px;
+    margin: 12px 0;
 }
 
 aside ol li a {
     text-decoration: none;
     color: white;
+    transition: color 0.2s;
 }
 
 aside ol li a:hover {
-    color: #111;
+    color: #FF2800;
+    text-decoration: underline;
 }
 
 footer {
@@ -107,4 +127,5 @@ footer {
     justify-content: space-around;
     padding: 15px;
     margin-top: auto;
+    font-weight: bold;
 }

@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Autos</h1>
     <main>
         <section>
             <article>
                 <form name="autos_f1" method="post" action="#" enctype="multipart/form-data">
                     <div id="autos">
-                        <div> 
-                            <label>Modelo: </label>
-                            <input type="text" id="modelo"/><br>
-                        </div>
-                        <div>
-                            <label>Color:</label>
-                            <input type="color" id="color"/>
-                        </div>
-                        <div>
-                            <label>Foto:</label>
-                            <input type="file" id="imagen"/><br> 
-                        </div>
-                        <div>
-                            <label>Activo:</label>
-                            <input type="radio" name="activo" id="activo" value="Si"/>Si
-                            <input type="radio" name="activo" id="activo" value="No"/>No
-                        </div>
+                        <fieldset>
+                            <legend>Autos</legend>
+                            <div> 
+                                <label>Modelo: </label>
+                                <input type="text" id="modelo"/><br>
+                            </div>
+                            <div>
+                                <label>Color:</label>
+                                <input type="color" id="color"/>
+                            </div>
+                            <div>
+                                <label>Foto:</label>
+                                <input type="file" id="imagen"/><br> 
+                            </div>
+                            <div>
+                                <label>Activo:</label>
+                                <input type="radio" name="activo" id="activo" value="Si"/>Si
+                                <input type="radio" name="activo" id="activo" value="No"/>No
+                            </div>
+                        </fieldset>
                     </div>
                     <button id="boton" onclick="autos()">Guardar</button>
                 </form>

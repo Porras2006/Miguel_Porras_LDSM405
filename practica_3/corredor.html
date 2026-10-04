@@ -8,37 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Corredor</h1>
     <main>
         <section>
             <article>
                 <form name="corredor_f1" method="post" action="#" enctype="multipart/form-data">
                     <div id="corredor">
-                        <div> 
-                            <label>Nombre: </label>
-                            <input type="text" id="nombre"/>
-                        </div>
-                        <div>
-                            <label>Apellido Paterno:</label>
-                            <input type="text" id="a_paterno"/>
-                        </div>
-                        <div>
-                            <label>Apellido Materno:</label>
-                            <input type="text" id="a_materno"/>
-                        </div>
-                        <div>
-                            <label>Edad:</label>
-                            <input type="number" id="edad"/>
-                        </div>
-                        <div>
-                            <label>Genero:</label>
-                            <input type="radio" name="genero" id="genero" value="Masculino"/>Masculino
-                            <input type="radio" name="genero" id="genero" value="Femenino"/>Femenino
-                        </div>
-                        <div>
-                            <label>Foto:</label>
-                            <input type="file" id="imagen"/><br> 
-                        </div>
+                        <fieldset>
+                            <legend>Corredor</legend>
+                            <div> 
+                                <label>Nombre: </label>
+                                <input type="text" id="nombre"/>
+                            </div>
+                            <div>
+                                <label>Apellido Paterno:</label>
+                                <input type="text" id="a_paterno"/>
+                            </div>
+                            <div>
+                                <label>Apellido Materno:</label>
+                                <input type="text" id="a_materno"/>
+                            </div>
+                            <div>
+                                <label>Edad:</label>
+                                <input type="number" id="edad"/>
+                            </div>
+                            <div>
+                                <label>Genero:</label>
+                                <input type="radio" name="genero" id="genero" value="Masculino"/>Masculino
+                                <input type="radio" name="genero" id="genero" value="Femenino"/>Femenino
+                            </div>
+                            <div>
+                                <label>Foto:</label>
+                                <input type="file" id="imagen"/><br> 
+                            </div>
+                        </fieldset>
                     </div>
                     <button id="boton" onclick="corredor()">Guardar</button>
                 </form>

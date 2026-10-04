@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Escuderia</h1>
     <main>
         <section>
             <article>
                 <form name="escuderia_f1" method="post" action="#" enctype="multipart/form-data">
                     <div id="escuderia">
-                        <div> 
-                            <label>Nombre: </label>
-                            <input type="text" id="nombre"/><br>
-                        </div>
-                        <div>
-                            <label>Descripcion</label>
-                            <textarea cols="10" rows="10" id="descripcion"></textarea>
-                        </div>
+                        <fieldset>
+                            <legend>Escuderia</legend>
+                            <div> 
+                                <label>Nombre: </label>
+                                <input type="text" id="nombre"/><br>
+                            </div>
+                            <div>
+                                <label>Descripcion</label>
+                                <textarea cols="10" rows="10" id="descripcion"></textarea>
+                            </div>
+                        </fieldset>
                     </div>
                     <button id="boton" onclick="escuderia()">Guardar</button>
                 </form>

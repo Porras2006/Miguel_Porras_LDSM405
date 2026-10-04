@@ -1,34 +1,34 @@
 function autos() {
     var modelo=document.getElementById('modelo').value;
-    alert(modelo);
+    alert("El modelo es: " + modelo);
     var color=document.getElementById('color').value;
-    alert(color);
+    alert("El color es: " + color);
     var imagen=document.getElementById('imagen').value;
-    alert(imagen);
+    alert("Esta es su imagen: " + imagen);
     var activo=document.getElementById('activo').value;
-    alert(activo);
+    alert("Esta Activo: " + activo);
 }
 
 function escuderia(){
     var nombre=document.getElementById('nombre').value;
-    alert(nombre);
+    alert("La escuderia es: " + nombre);
     var descripcion=document.getElementById('descripcion').value;
-    alert(descripcion);
+    alert("Descripcion: " + descripcion);
 }
 
 function corredor(){
     var nombre=document.getElementById('nombre').value;
-    alert(nombre);
+    alert("Su nombre es: " + nombre);
     var a_paterno=document.getElementById('a_paterno').value;
-    alert(a_paterno);
+    alert("Su apellido paterno es: " + a_paterno);
     var a_materno=document.getElementById('a_materno').value;
-    alert(a_materno);
+    alert("Su apellido materno es: " + a_materno);
     var edad=document.getElementById('edad').value;
-    alert(edad);
+    alert("Su edad es: " + edad);
     var genero=document.getElementById('genero').value;
-    alert(genero);
+    alert("Su genero es: " + genero);
     var imagen=document.getElementById('imagen').value;
-    alert(imagen);
+    alert("Esta es su foto: " + imagen);
 }
 
 function relaciones() {
